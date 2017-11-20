@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pmh.prograudrink.Registro">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/textNombreReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Nombre"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_weight="2"
+        android:id="@+id/ingresaNombreEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    >
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/textApellidoReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="14sp" />
+    <EditText
+        android:layout_weight="2"
+        android:id="@+id/ingresaApellidoEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:text="Apellido"
+        android:textSize="14sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/textNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Nacimiento"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinnerDia"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnHombre"
+            android:layout_alignStart="@+id/btnHombre"
+            android:layout_alignTop="@+id/textNombre4" />
+
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinnerMes"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/spinnerDia"
+            android:layout_toEndOf="@+id/spinnerDia" />
+
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinnerAño"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnCondiciones"
+            android:layout_toStartOf="@+id/spinnerDia" />
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+    <RadioButton
+        android:id="@+id/btnMujer"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mujer"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/btnHombre"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMujer"
+        android:text="Hombre"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textPassReg"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_marginLeft="60dp"
+            android:layout_weight="2"
+            android:id="@+id/editPass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:text="contraseña" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/textPassReg2"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifique contraseña"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editPass2"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:text="contraseña" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+
+    <RadioButton
+        android:layout_weight="2"
+        android:id="@+id/btnCondiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acepto los terminos"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_weight="2"
+        android:id="@+id/btnRegistrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRojito"
+        android:text="Registrar" />
+
+</LinearLayout>
+</LinearLayout>
